@@ -1,18 +1,11 @@
-## **Click on below image to watch tutorial** 👇
+# Project Name
+My personal portfolio
+## Description
+A brief description of what your project does.
+what is my projects are what i can do the to contribute for the web development i confirmed with my performance in the my portfolio
 
-
-[![youtube](https://img.youtube.com/vi/rAcsYhW-q9k/0.jpg)](https://www.youtube.com/watch?v=rAcsYhW-q9k)
-
-## To Start the project
-### clone the repo
-  ```bash
- git clone https://github.com/becodewala-youtube/Portfolio-React.git
-  ```
-###  install all dependencies
+## To Start the Project
+App.jsx
+### Clone the Repo
 ```bash
-npm i
-```
-#### start the project
-```bash
-npm start
-```
+git clone https://github.com/Naveen/naveen-portfolio-react.git
