@@ -1,0 +1,503 @@
+/*Header css code */
+
+
+/* style.css */
+
+body {
+  font-family: 'Poppins', sans-serif; /* Sets the font family for the entire body */
+}
+
+.header {
+  background-color: white; /* Default background color for the header */
+  z-index: 20; /* Ensures the header is above other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow below the header */
+  padding: 1rem 10rem; /* Padding for top/bottom and left/right */
+  position: fixed; /* Fixes the header at the top of the viewport */
+  width: 100%; /* Makes the header full width */
+  transition: background-color 0.5s ease; /* Smooth transition for background color changes */
+}
+
+.header.dark {
+  background-color: #1a202c; /* Background color for dark mode */
+}
+
+.container {
+  display: flex; /* Uses flexbox for layout */
+  align-items: center; /* Vertically centers items within the container */
+}
+
+.title {
+  font-size: 2rem; /* Font size for the title */
+  font-weight: bold; /* Makes the title bold */
+  color: #805ad5; /* Purple color for the title */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.nav {
+  padding-left: 1.5rem; /* Padding on the left of the navigation */
+  margin-left: auto; /* Pushes the navigation to the right */
+}
+
+.nav-list {
+  display: flex; /* Uses flexbox for navigation items */
+  gap: 2rem; /* Space between navigation items */
+  font-weight: bold; /* Makes navigation items bold */
+}
+
+.nav-link {
+  color: #4a5568; /* Default color for navigation links */
+  text-decoration: none; /* Removes underline from links */
+  transition: color 0.3s ease; /* Smooth transition for color changes on hover */
+}
+
+.nav-link:hover {
+  color: #a0aec0; /* Lighter gray color on hover */
+}
+
+.toggle-button {
+  font-size: 2rem; /* Font size for the toggle button */
+  background: none; /* Removes default button background */
+  border: none; /* Removes default button border */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: color 0.5s ease; /* Smooth transition for color changes */
+}
+
+.icon-sun {
+  color: #ecc94b; /* Yellow color for the sun icon */
+}
+
+.icon-moon {
+  color: #a0aec0; /* Gray color for the moon icon */
+}
+
+
+
+
+  /*About css*/
+
+
+
+  .about-section {
+    background-color: white; /* Background color for light mode */
+    padding: 5rem; /* Vertical and horizontal padding */
+    display: flex; /* Flexbox for layout */
+    flex-direction: row; /* Row direction for image and text */
+  }
+  
+  .about-image {
+    width: 50%; /* Set width of the image */
+  }
+  
+  .about-container {
+    margin: auto; /* Center the container */
+    text-align: center; /* Center text */
+  }
+  
+  .about-title {
+    font-size: 2.5rem; /* Font size for title */
+    font-weight: bold; /* Bold font weight */
+    margin-bottom: 1.5rem; /* Space below title */
+    color: #6b46c1; /* Purple color for title */
+    padding-bottom: 3rem; /* Space below title */
+  }
+  
+  .about-description {
+    max-width: 40rem; /* Maximum width for description */
+    margin: auto; /* Center description */
+    color: #4a5568; /* Gray color for text */
+    margin-bottom: 1.5rem; /* Space below description */
+    text-align: justify; /* Justify text alignment */
+  }
+  
+  .cv-button {
+    padding: 0.5rem 1.5rem; /* Padding for the button */
+    background-color: #6b46c1; /* Purple background for button */
+    color: white; /* White text color for button */
+    border: none; /* Remove border */
+    border-radius: 0.375rem; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+  }
+  
+  .cv-button:hover {
+    background-color: #5a36a1; /* Darker shade on hover */
+  }
+  
+  .cv-button a {
+    text-decoration: none; /* Remove underline from link */
+    color: white; /* White color for link */
+  }
+
+
+
+
+
+  /*Contact css code */
+
+
+
+  .contact-section {
+    background-color: white; /* Background color for light mode */
+    padding: 5rem 0; /* Vertical padding */
+  }
+  
+  .contact-container {
+    max-width: 800px; /* Maximum width for the container */
+    margin: auto; /* Center the container */
+  }
+  
+  .contact-title {
+    font-size: 2.5rem; /* Font size for title */
+    font-weight: bold; /* Bold font weight */
+    text-align: center; /* Center title */
+    margin-bottom: 2rem; /* Space below title */
+    color: #1a202c; /* Dark gray color for title */
+  }
+  
+  .contact-form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Column direction for inputs */
+    gap: 1.5rem; /* Space between inputs */
+  }
+  
+  .contact-input, .contact-textarea {
+    width: 100%; /* Full width */
+    padding: 1rem; /* Padding inside inputs */
+    border: 1px solid #cbd5e0; /* Light gray border */
+    border-radius: 0.5rem; /* Rounded corners */
+    outline: none; /* Remove outline */
+    transition: border-color 0.3s; /* Transition for border color */
+  }
+  
+  .contact-input:focus, .contact-textarea:focus {
+    border-color: #6b46c1; /* Purple border on focus */
+  }
+  
+  .contact-textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px; /* Minimum height for textarea */
+  }
+  
+  .contact-button {
+    width: 100%; /* Full width */
+    padding: 1rem; /* Padding inside button */
+    background-color: #6b46c1; /* Purple background */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 0.5rem; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+  }
+  
+  .contact-button:hover {
+    background-color: #5a36a1; /* Darker shade on hover */
+  }
+
+
+
+
+  /*Footer css Code*/
+
+  .footer {
+    background-color: #6b46c1; /* Purple background */
+    padding: 1.5rem 0; /* Vertical padding */
+  }
+  
+  .footer-container {
+    max-width: 800px; /* Maximum width for the container */
+    margin: auto; /* Center the container */
+    text-align: center; /* Center text */
+    color: white; /* White text color */
+  }
+  
+  .footer-text {
+    margin-bottom: 1rem; /* Space below text */
+  }
+  
+  .footer-socials {
+    display: flex; /* Flexbox for social icons */
+    justify-content: center; /* Center icons */
+    gap: 1rem; /* Space between icons */
+    margin-top: 1rem; /* Space above icons */
+  }
+  
+  .social-link {
+    color: white; /* White color for links */
+    transition: color 0.3s; /* Transition for hover effect */
+  }
+  
+  .social-link:hover {
+    color: #e2e8f0; /* Light gray color on hover */
+  }
+
+
+
+
+/*Hero css Code*/
+
+
+
+.hero-section {
+    background-color: white; /* Background color for light mode */
+    padding: 5rem 5rem; /* Vertical and horizontal padding */
+  }
+  
+  .hero-container {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Column direction for mobile */
+    align-items: center; /* Center items */
+    justify-content: space-between; /* Space between items */
+    max-width: 1200px; /* Maximum width for the container */
+    margin: auto; /* Center the container */
+  }
+  
+  @media (min-width: 768px) {
+    .hero-container {
+      flex-direction: row; /* Row direction for larger screens */
+    }
+  }
+  
+  .social-links {
+    display: flex; /* Flexbox for social links */
+    flex-direction: column; /* Column direction for mobile */
+    margin-top: 1rem; /* Space above social links */
+  }
+  
+  @media (min-width: 768px) {
+    .social-links {
+      flex-direction: row; /* Row direction for larger screens */
+      margin-top: 0; /* Remove margin for larger screens */
+    }
+  }
+  
+  .social-link {
+    color: #4a5568; /* Gray color for links */
+    transition: color 0.3s; /* Transition for hover effect */
+    padding: 1rem; /* Padding around links */
+  }
+  
+  .social-link:hover {
+    color: #a0aec0; /* Light gray color on hover */
+  }
+  
+  .hero-text {
+    text-align: left; /* Align text to the left */
+    margin: 2rem 0; /* Margin for spacing */
+  }
+  
+  .hero-title {
+    font-size: 3rem; /* Font size for title */
+    font-weight: bold; /* Bold font weight */
+    color: #1a202c; /* Dark gray color for title */
+  }
+  
+  .hero-name {
+    color: #6b46c1; /* Purple color for name */
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem; /* Font size for subtitle */
+    font-weight: 600; /* Semi-bold font weight */
+    color: #2d3748; /* Dark gray color for subtitle */
+  }
+  
+  .hero-description {
+    margin-top: 1rem; /* Space above description */
+    color: #4a5568; /* Gray color for description */
+  }
+  
+  .contact-button {
+    margin-top: 1.5rem; /* Space above button */
+    padding: 0.5rem 1.5rem; /* Padding inside button */
+    background-color: #6b46c1; /* Purple background */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 0.5rem; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+  }
+  
+  .contact-button:hover {
+    background-color: #5a36a1; /* Darker purple on hover */
+  }
+  
+  .hero-image {
+    width: 50%; /* Width for the image */
+    max-width: 400px; /* Maximum width for the image */
+    margin-top: 2rem; /* Margin above the image */
+  }
+  
+  @media (min-width: 768px) {
+    .hero-image {
+      margin-top: 0; /* Remove top margin for larger screens */
+    }
+  }
+
+
+
+
+  /*Project css code */
+
+  .project-section {
+    background-color: white; /* Background color for light mode */
+    padding: 3rem 0; /* Vertical padding */
+  }
+  
+  .project-container {
+    max-width: 1200px; /* Maximum width for the container */
+    margin: auto; /* Center the container */
+    padding: 0 20px; /* Horizontal padding */
+  }
+  
+  .project-title {
+    font-size: 2rem; /* Font size for title */
+    font-weight: bold; /* Bold font weight */
+    text-align: center; /* Center text */
+    margin-bottom: 1.5rem; /* Space below title */
+    color: #1a202c; /* Dark gray color for title */
+  }
+  
+  .filter-buttons {
+    display: flex; /* Flexbox for filter buttons */
+    justify-content: center; /* Center buttons */
+    margin-bottom: 2rem; /* Space below buttons */
+  }
+  
+  .filter-button {
+    margin: 0 0.5rem; /* Space between buttons */
+    padding: 0.5rem 1rem; /* Padding inside button */
+    border: 2px solid #6b46c1; /* Border color */
+    border-radius: 9999px; /* Fully rounded corners */
+    background-color: white; /* Background color */
+    color: #6b46c1; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
+  }
+  
+  .filter-button.active {
+    background-color: #6b46c1; /* Active button background color */
+    color: white; /* Active button text color */
+  }
+  
+  .portfolio-items {
+    display: flex; /* Flexbox for portfolio items */
+    overflow-x: auto; /* Horizontal scrolling */
+    gap: 1.5rem; /* Space between items */
+    padding: 0 1rem; /* Horizontal padding */
+  }
+  
+  .portfolio-item {
+    position: relative; /* Position relative for absolute positioning of the link */
+    min-width: 280px; /* Minimum width for items */
+    height: 200px; /* Fixed height for items */
+    background-color: white; /* Background color for items */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    overflow: hidden; /* Hide overflow */
+    transition: transform 0.3s; /* Transition for scaling effect */
+  }
+  
+  .portfolio-image {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the area */
+    transition: opacity 0.3s; /* Transition for opacity */
+  }
+  
+  .portfolio-image.hovered {
+    opacity: 0.5; /* Reduce opacity on hover */
+  }
+  
+  .portfolio-link {
+    position: absolute; /* Position absolutely to cover the item */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    right: 0; /* Align to right */
+    bottom: 0; /* Align to bottom */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* White text color */
+    font-size: 1.25rem; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition for background color */
+  }
+  
+  .portfolio-link:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+  }
+
+
+
+
+
+  /*Skills css code */
+
+
+
+.skills-section {
+  background-color: white; /* Background color for light mode */
+  padding: 5rem 0; /* Vertical padding */
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+}
+
+.skills-container {
+  max-width: 1200px; /* Maximum width for the container */
+  margin: auto; /* Center the container */
+  padding: 0 2rem; /* Horizontal padding */
+  flex: 1; /* Allow this div to grow */
+}
+
+.skills-title {
+  font-size: 2.5rem; /* Font size for title */
+  font-weight: bold; /* Bold font weight */
+  margin-bottom: 2rem; /* Space below title */
+  color: #6b46c1; /* Purple color for title */
+  text-align: center; /* Center the title */
+}
+
+.skills-list {
+  display: grid; /* Grid layout for skills */
+  grid-template-columns: 1fr; /* Single column by default */
+  gap: 2rem; /* Space between items */
+}
+
+@media (min-width: 768px) {
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+  }
+}
+
+.skill-item {
+  width: 100%; /* Full width for each skill item */
+}
+
+.skill-name {
+  font-size: 1rem; /* Font size for skill name */
+  font-weight: 600; /* Semi-bold font weight */
+  color: #4a5568; /* Dark gray color for skill name */
+}
+
+.skill-bar-container {
+  background-color: #e2e8f0; /* Light gray background for skill bar */
+  border-radius: 9999px; /* Fully rounded corners */
+  height: 8px; /* Height of the skill bar */
+  overflow: hidden; /* Hide overflow */
+}
+
+.skill-bar {
+  background-color: #6b46c1; /* Purple background for skill level */
+  height: 100%; /* Full height */
+  border-radius: 9999px; /* Fully rounded corners */
+  transition: width 0.3s ease; /* Transition for width change */
+}
+
+.skills-image {
+  width: 35rem; /* Fixed width for image */
+  height: 35rem; /* Fixed height for image */
+  margin-left: 2rem; /* Space between text and image */
+}
+

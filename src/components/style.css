@@ -1,0 +1,1016 @@
+/*Header css code from here */
+
+.header {
+    background-color: white; /* Light mode background */
+    z-index: 20;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem 10rem; /* Vertical and horizontal padding */
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions for color changes */
+  }
+  
+  .header.dark {
+    background-color: #1a202c; /* Dark mode background */
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between elements */
+    height: 100%; /* Ensures header height is maintained */
+  }
+  
+  .title {
+    font-size: 1.5rem; /* Font size for the title */
+    font-weight: bold; /* Emphasizes the title */
+    color: #A855F7; /* Title color in light mode */
+    cursor: pointer;
+    transition: color 0.3s; /* Smooth transition for color changes */
+    margin-left: -50px; /* Default margin */
+    margin-right: 30px;
+  }
+  
+  .title.dark {
+    color: #A855F7; /* Maintains title color in dark mode */
+  }
+  
+  .nav {
+    display: flex; /* Default layout for desktop */
+    gap: 2rem; /* Spacing between navigation items */
+    font-weight: bold; /* Emphasizes navigation items */
+    font-size: 1rem; /* Font size for navigation items */
+    margin-left: auto; /* Push nav items to the right */
+  }
+  
+  .nav.open {
+    display: flex; /* Display when opened on mobile */
+  }
+  
+  .nav-list {
+    display: flex; /* Default layout for desktop */
+    gap: 2rem; /* Spacing between navigation items */
+  }
+  
+  .nav-link {
+    color: #404959; /* Navigation link color in light mode */
+    transition: color 0.3s; /* Smooth transition for color changes */
+  }
+  
+  .nav-link.dark {
+    color: #cbd5e0; /* Navigation link color in dark mode */
+  }
+  
+  .toggle-button {
+    font-size: 1.5rem; /* Font size for the toggle button */
+    outline: none;
+    transition: all 0.5s ease-in-out; /* Smooth transition for all properties */
+    margin-left: 1.5rem;
+  }
+  
+  .sun-icon {
+    color: #f6e05e; /* Color for sun icon */
+  }
+  
+  .moon-icon {
+    color: #a0aec0; /* Color for moon icon */
+  }
+  
+  .toggle-button.nav-toggle {
+    color: black; /* Default color for nav toggle button in light mode */
+  }
+  
+  .header.dark .toggle-button.nav-toggle {
+    color: white; /* Change color for nav toggle button in dark mode */
+  }
+  
+  /* Ensure nav links change color in dark mode */
+  .header.dark .nav-link {
+    color: #cbd5e0; /* Navigation link color in dark mode */
+  }
+  
+  .header.dark .nav-link:hover {
+    color: #f6e05e; /* Change hover color for nav link in dark mode */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 800px) {
+    .header {
+        padding: 0;
+    }
+    .title{
+      margin-left: 10px;
+    }
+    .toggle-button{
+        margin: 0;
+    }
+      .nav {
+          display: none; /* Hide navigation by default */
+          flex-direction: column; /* Stack items vertically */
+          position: absolute; /* Position it off the normal flow */
+          background-color: rgba(255, 255, 255, 0.9); /* Light background with some transparency */
+          width: 100%; /* Full width on mobile */
+          top: 100%; /* Position below the header */
+          left: 0;
+          z-index: 10; /* Ensure it appears above other content */
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+          border-radius: 8px; /* Rounded corners */
+      }
+  
+      .nav.open {
+          display: flex; /* Show when open */
+      }
+  
+      .nav-list {
+          gap: 1rem; /* Adjust spacing for mobile */
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0.5rem 0; /* Padding around the list */
+          margin: 0; /* Remove margin */
+          background-color: rgba(255, 255, 255, 0.9); /* Same background as nav */
+          border-radius: 8px; /* Match border radius */
+          transition: background-color 0.3s; /* Smooth transition for background color */
+      }
+  
+      .nav-link {
+          color: #404959; /* Navigation link color in light mode */
+          transition: color 0.3s; /* Smooth transition for color changes */
+          padding: 0.5rem 1rem; /* Padding for each link */
+          border-radius: 4px; /* Rounded corners for links */
+          width: 100%; /* Make links take full width */
+          text-align: center; /* Center text */
+      }
+  
+      .nav-link:hover {
+          background-color: rgba(240, 240, 240, 0.8); /* Light hover effect */
+      }
+  
+      .toggle-button {
+          margin-left: 0.5rem; 
+          order: 1; /* Position the toggle button */
+      }
+  
+      .header .container {
+          justify-content: space-between; /* Maintain spacing */
+      }
+  
+      .header.dark .nav-list {
+          background-color: rgba(26, 32, 44, 0.9); /* Dark mode background */
+      }
+  
+      .header.dark .nav-link {
+          color: #cbd5e0; /* Navigation link color in dark mode */
+      }
+  
+      .header.dark .nav-link:hover {
+          background-color: rgba(80, 80, 80, 0.8); /* Dark mode hover effect */
+      }
+  }
+  
+  
+  
+  @media (min-width: 801px) {
+    .toggle-button.nav-toggle {
+        display: none; /* Hide navigation toggle button on larger screens */
+    }
+  }
+  
+  
+
+
+  /* Hero Styles */
+
+.hero-section {
+    background-color: white; /* Light mode background */
+    color: #404959; /* Light mode text color */
+    padding: 5rem 2rem; /* Padding for the hero section */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions for background and text color */
+    display: flex;
+}
+
+.hero-section.dark {
+    background-color: #1a202c; /* Dark mode background */
+    color: #e2e8f0; /* Dark mode text color */
+}
+
+.hero-container {
+    display: flex;
+    align-items: center; /* Centers content */
+    margin: 0 auto; /* Centers container */
+    text-align: center; /* Centers text */
+    justify-content: space-evenly;
+}
+
+.darkMode.hero-title {
+    color: white;
+}
+
+.contents-hero {
+    display: flex;
+    text-align: center; 
+    justify-content: space-evenly;
+    margin-right: 30px;
+    margin-left: 80px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 60px;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.social-links a {
+    margin: 0 1rem; /* Spacing between social icons */
+    color: inherit; /* Inherit color from parent */
+    font-size: 1.5rem; /* Font size for icons */
+    transition: color 0.3s; /* Smooth transition for icon color */
+}
+
+.social-links a:hover {
+    color: #6b46c1; /* Color on hover */
+}
+
+.hero-content {
+    text-align: left; /* Align text to left */
+}
+
+.hero-title {
+    font-size: 3rem; /* Size for main title */
+    font-weight: bold; /* Main title weight */
+    margin-bottom: 0rem; /* Spacing below title */
+    color: black;
+}
+
+.hero-section.dark .hero-title {
+    color: #f7fafc; /* Dark mode title color */
+}
+
+.name-highlight {
+    color: #A855F7; /* Color for the name */
+}
+
+.hero-subtitle {
+    font-size: 1.5rem; /* Size for subtitle */
+    font-weight: 600; /* Subtitle weight */
+    margin-top: 0rem; /* Spacing above subtitle */
+    color: black;
+}
+
+.hero-section.dark .hero-subtitle {
+    color: #cbd5e0; /* Dark mode description color */
+}
+
+.hero-description {
+    margin: 1.2rem 0; /* Margin for description */
+}
+
+.hero-section.dark .hero-description {
+    color: #cbd5e0; /* Dark mode description color */
+}
+
+.contact-button {
+    background-color: #A855F7; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    padding: 0.5rem 1.5rem; /* Padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    border-radius: 0.375rem; /* Rounded corners */
+    margin-top: 0rem; /* Space above button */
+}
+
+.contact-button:hover {
+    background-color: #6f4fc6; /* Darker shade on hover */
+}
+
+.hero-image {
+    width: 50%; /* Image width */
+    margin-top: 0.3rem; /* Spacing above the image */
+    margin-right: -80px;
+}
+
+/* Responsive adjustments for screens between 0 and 800px */
+@media (max-width: 800px) {
+    .hero-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center content */
+        text-align: center; /* Center text */
+    }
+    .contents-hero{
+        margin-left: 30px;
+    }
+
+    .hero-image {
+        display: none; /* Hide the image on smaller screens */
+    }
+
+    .social-links {
+        margin-right: 40px;
+        padding-right: 0; /* Reset padding */
+        margin-top: 20px; /* Adjust margin for spacing */
+        gap: 10px; /* Reduce space between icons */
+    }
+
+    .contact-button {
+        margin-top: 20px; /* Add space above button for clarity */
+    }
+}
+
+/* Adjustments for screens above 800px */
+@media (min-width: 801px) {
+    .hero-container {
+        flex-direction: row; /* Keep row layout for larger screens */
+        justify-content: space-between; /* Space items evenly */
+    }
+
+    .hero-image {
+        width: 50%; /* Maintain image width on larger screens */
+        margin: 0; /* Reset margin */
+    }
+}
+
+
+
+
+
+/* About CSS Code */
+.about-section {
+    background-color: white;
+    color: #4a4a4a; /* Default text color */
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: row; /* Default to row layout */
+    justify-content: space-between; /* Space between image and text */
+}
+
+.about-image {
+    width: 50%; /* Default image width */
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center; /* Center text */
+}
+
+.about-title {
+    font-size: 2.5rem; /* Title size */
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #A855F7; /* Purple color */
+}
+
+.about-description {
+    max-width: 640px;
+    margin: auto;
+    color: #4a4a4a; /* Default text color */
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #A855F7; /* Purple color */
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #5a4abd; /* Darker purple */
+}
+
+/* Dark mode styles */
+.dark .about-section {
+    background-color: #1a202c;
+    color: #e0e0e0;
+}
+
+.dark .about-description {
+    color: #d3d3d3; /* Lighter text color */
+}
+
+.dark .about-title {
+    color: #d3d3d3; /* Lighter text color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .about-section {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        padding: 40px 20px; /* Reduced padding for smaller screens */
+    }
+
+    .about-image {
+        display: none; /* Hide the image on small screens */
+    }
+
+    .about-container {
+        text-align: center; /* Center text for mobile */
+    }
+
+    .about-title {
+        font-size: 2rem; /* Smaller title size for mobile */
+    }
+
+    .about-description {
+        font-size: 1rem; /* Adjust description size for mobile */
+        margin-bottom: 16px; /* Reduced margin for mobile */
+    }
+
+    .download-button {
+        padding: 8px 20px; /* Adjust button padding for mobile */
+    }
+}
+
+
+
+
+
+/*Skill css code from here */
+
+.skills-section {
+    background-color: white; /* Background color for light mode */
+    padding: 5rem 13rem; /* Vertical and horizontal padding */
+    display: flex; /* Flexbox layout */
+    flex-direction: row; /* Default to row layout */
+    min-width: 300px;
+}
+
+.skills-section.dark {
+    background-color: #1a202c; /* Background color for dark mode */
+}
+
+.skills-container {
+    flex: 1; /* Allow the container to grow */
+    margin-top: 50px;
+}
+
+.skills-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.25rem; /* Font size for title */
+    font-weight: bold; /* Bold font weight */
+    /* margin-left: 33rem;  */
+    margin-bottom: 1rem; /* Space below title */
+    color: #A855F7; /* Text color for light mode */
+}
+
+.skills-title.dark {
+    color: white; /* Title color for dark mode */
+}
+
+.skills-grid {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(1, 1fr); /* Single column layout */
+    gap: 2rem; /* Space between items */
+    /* margin-right: 10rem; */
+    margin-right: 5rem;
+}
+
+.skill-item {
+    width: 100%; /* Full width for items */
+}
+
+.skill-name {
+    font-size: 0.875rem; /* Font size for skill name */
+    font-weight: 600; /* Semi-bold font weight */
+    color: black; /* Text color for light mode */
+}
+
+.skill-name.dark {
+    color: #D1D5DB; /* Text color for dark mode */
+}
+
+.skill-bar {
+    width: 100%; /* Full width */
+    background-color: #E5E7EB; /* Background color for light mode */
+    border-radius: 9999px; /* Fully rounded corners */
+    height: 0.5rem; /* Height of the skill bar */
+}
+
+.skill-bar.dark {
+    background-color: #374151; /* Background color for dark mode */
+}
+
+.skill-progress {
+    background-color: #9333EA; /* Progress bar color for light mode */
+    border-radius: 9999px; /* Fully rounded corners */
+    height: 100%; /* Full height */
+}
+
+.skill-progress.dark {
+    background-color: #9F7AEA; /* Progress bar color for dark mode */
+}
+
+.skills-image {
+    width: 35rem; /* Custom width */
+    height: 35rem; /* Custom height */
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .skills-section {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 3rem 2rem; /* Reduced padding for smaller screens */
+    }
+
+    .skills-title {
+        text-align: center; /* Center title */
+        font-size: 1.75rem; /* Smaller title size for mobile */
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(1, 1fr); /* Ensure single column */
+    }
+
+    .skills-image {
+        width: 100%; /* Full width for image on mobile */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 20px; /* Space below the image */
+    }
+
+    .skill-name {
+        font-size: 0.75rem; /* Adjust skill name size for mobile */
+    }
+}
+
+@media (min-width: 801px) {
+    .skills-section {
+        flex-direction: row; 
+    }
+}
+
+
+
+
+/* Portfolio Section */
+.portfolio-section {
+    background-color: white; /* Background color for light mode */
+    padding: 3rem 0; /* py-12 */
+    scroll-margin-top: 40px; /* Adjust based on your header height */
+}
+
+.portfolio-section.dark {
+    background-color: #1a202c; /* Background color for dark mode */
+}
+
+.portfolio-container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 5rem; /* px-20 */
+}
+
+.portfolio-title {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: bold; /* font-bold */
+    text-align: center; /* text-center */
+    margin-bottom: 1.7rem; /* mb-6 */
+    color: #A855F7; /* Text color for light mode */
+}
+
+.portfolio-title.dark {
+    color: white; /* Title color for dark mode */
+}
+
+.portfolio-items {
+    position: relative;
+    display: flex; /* Flexbox layout */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 1.5rem; /* Space between items */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.portfolio-items::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.filter-buttons {
+    display: flex; /* Flexbox for buttons */
+    justify-content: center; /* Center buttons */
+    margin-bottom: 2rem; /* mb-8 */
+}
+
+.filter-button {
+    margin: 0 0.5rem; /* mx-2 */
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    border-radius: 9999px; /* rounded-full */
+    border: 2px solid #A855F7; /* border-purple-500 */
+    background-color: white; /* bg-white */
+    color: #A855F7; /* text-purple-500 */
+    transition: all 0.3s; /* transition duration */
+}
+
+.filter-button.dark {
+    border-color: #A855F7; /* dark:border-purple-400 */
+    background-color: #2d3748; /* dark:bg-gray-800 */
+}
+
+.filter-button.active {
+    background-color: #A855F7; /* bg-purple-500 */
+    color: white; /* text-white */
+}
+
+.portfolio-item {
+    position: relative;
+    min-width: 280px; /* min-w-[280px] */
+    height: 200px; /* h-[200px] */
+    background-color: white; /* bg-white */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+    overflow: hidden; /* Overflow hidden */
+}
+
+.portfolio-item.dark {
+    background-color: #2d3748; /* dark:bg-gray-800 */
+}
+
+.portfolio-image {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover image */
+    transition: opacity 0.3s; /* transition-opacity */
+}
+
+.portfolio-overlay {
+    position: absolute;
+    inset: 0; /* Full overlay */
+    display: flex; /* Flexbox for centering */
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    color: white; /* Text color */
+    font-size: 1.25rem; /* text-xl */
+    font-weight: bold; /* font-bold */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s; /* transition-opacity */
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1; /* Show on hover */
+}
+
+.portfolio-link {
+    text-decoration: none; /* No underline */
+    color: inherit; /* Inherit color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .portfolio-items {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .portfolio-container {
+        padding: 0 2rem; /* Reduced horizontal padding */
+    }
+
+    .portfolio-item {
+        width: 100%; /* Full width for items on mobile */
+        height: auto; /* Adjust height to maintain aspect ratio */
+        max-width: 90%; /* Limit width for better fit */
+        margin-bottom: 1rem; /* Space between items */
+    }
+
+    .portfolio-title {
+        font-size: 1.5rem; /* Smaller title size for mobile */
+    }
+
+    .filter-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+}
+
+
+
+
+
+
+
+/*Contact section css code from here */
+
+
+.email-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 80px;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for better spacing */
+    padding: 30px; /* Added padding around the container */
+    border: 1px solid #ddd; /* Light border around the contact form */
+    border-radius: 15px; /* Rounded corners for the contact form */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: white; /* Background color for the form */
+    position: relative; /* Position relative to allow absolute positioning inside */
+}
+
+.left-container h1 {
+    color: #A855F7;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    text-align: center; /* Center the title */
+    font-size: 1.5rem; /* Increase title size */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.input-fields,
+.msg-field {
+    border: 1px solid #ccc; /* Light border for input fields */
+    outline: none;
+    height: 40px;
+    width: 100%; /* Full width of the container */
+    border-radius: 50px; /* Rounded corners */
+    padding-left: 20px;
+    font-weight: 600;
+    color: rgb(87, 86, 86);
+    transition: border 0.3s; /* Smooth transition for border */
+}
+
+.msg-field {
+    height: 100px;
+    border-radius: 20px;
+}
+
+.input-fields:focus,
+.msg-field:focus {
+    border: 2px solid orange; /* Highlight on focus */
+    font-weight: 800;
+}
+
+.submit-btn {
+    width: 100%; /* Full width for button */
+    height: 40px;
+    border-radius: 10px;
+    border: none; /* No border */
+    outline: none;
+    background: linear-gradient(#ff994f, #fabd86);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px; /* Space from OTP button */
+    transition: .3s;
+    margin-top: 60px;
+}
+
+.submit-btn:hover {
+    filter: brightness(120%);
+    transform: scale(1.05); /* Slightly increase size on hover */
+    font-weight: 800;
+}
+
+.otp-btn {
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(#7df2e5, #baeee8);
+    cursor: pointer;
+
+}
+
+.otp-field {
+    width: 130px;
+    margin-left: 10px;
+}
+
+.otp-label {
+    display: flex; /* Use flexbox for better alignment */
+    align-items: center; /* Center vertically */
+    margin-top: 10px; /* Space from the previous input */
+    gap: 10px; /* Space between the button and input */
+    position: relative; /* Make positioning relative */
+    top: -140px; /* Adjust this value to move it up into the contact box */
+    z-index: 1; /* Ensure it appears above other elements */
+    margin-left: 30px;
+}
+
+
+.right-container {
+    width: 500px;
+}
+
+.result-data {
+    color: red;
+    font-size: 24px;
+    margin-left: 15px;
+    text-align: center; /* Center the result message */
+}
+
+/* Dark Mode Styles */
+.email-container.dark {
+    background: #1a202c; /* Dark mode background */
+}
+
+.left-container.dark {
+    background-color: #2d3748; /* Dark mode background for the container */
+    border-color: #4A5568; /* Dark mode border color */
+}
+
+.left-container.dark h1 {
+    color: #e2e8f0; /* Title color in dark mode */
+}
+
+.input-fields.dark,
+.msg-field.dark {
+    background-color: #4A5568; /* Dark mode input background */
+    border: 1px solid #A0AEC0; /* Dark mode border */
+    color: #e2e8f0; /* Light text color */
+}
+
+.submit-btn.dark {
+    background: #A855F7; /* Darker gradient for button */
+}
+
+.result-data.dark {
+    color: #f56565; /* Light color for result text in dark mode */
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .email-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        /* margin: 200px 0; */
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+/*Contact section css code from here */
+
+
+.contact-section {
+    background-color: white; /* Light mode background */
+    padding: 5rem 2rem; /* Padding */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.contact-section.dark {
+    background-color: #1a202c; /* Dark mode background */
+    color: white; /* Text color in dark mode */
+}
+
+.contact-container {
+    max-width: 600px; /* Max width for the contact container */
+    margin: 0 auto; /* Center container */
+    text-align: center; /* Center text */
+    padding: 2rem; /* Added padding for better spacing */
+    border-radius: 0.5rem; /* Rounded corners for the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact-title {
+    font-size: 2.25rem; /* Title size */
+    margin-bottom: 1.5rem; /* Margin */
+    color: #A855F7; /* Purple color */
+    transition: color 0.3s; /* Smooth transition for color */
+}
+.contact-title.dark{
+    color: white;
+}
+.contact-form {
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Column layout */
+    gap: 1.5rem; /* Increased space between elements */
+}
+
+.contact-input,
+.contact-textarea {
+    padding: 0.75rem; /* Increased padding for better usability */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 0.375rem; /* Rounded corners */
+    transition: border 0.3s, background-color 0.3s; /* Smooth transition */
+    font-size: 1rem; /* Font size for better readability */
+}
+
+.contact-input.dark,
+.contact-textarea.dark {
+    background-color: #4A5568; /* Dark mode input background */
+    border: 1px solid #A0AEC0; /* Dark mode border */
+    color: #e2e8f0; /* Light text color */
+}
+
+.contact-button {
+    padding: 0.75rem 1.5rem; /* Increased padding */
+    background-color: #A855F7; /* Purple background */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 0.375rem; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition effect */
+    font-size: 1rem; /* Font size */
+}
+
+.contact-button:hover {
+    background-color: #5A3E9D; /* Darker purple on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .contact-section {
+        padding: 3rem 1rem; /* Reduced padding for mobile */
+    }
+
+    .contact-title {
+        font-size: 1.75rem; /* Smaller title size for mobile */
+    }
+
+    .contact-container {
+        padding: 1.5rem; /* Adjusted padding for small screens */
+    }
+
+    .contact-input,
+    .contact-textarea {
+        font-size: 1rem; /* Larger font size for inputs on mobile */
+        padding: 0.75rem; /* Maintain increased padding */
+    }
+
+    .contact-button {
+        font-size: 1rem; /* Consistent button text size for mobile */
+        padding: 0.75rem 1.5rem; /* Maintain increased padding */
+    }
+}
+
+
+
+
+
+
+
+/* footer code from here */
+
+.footer {
+    background-color: #A855F7; /* Purple background */
+    padding: 1.5rem 0; /* Vertical padding */
+}
+
+.footer-container {
+    max-width: 800px; /* Maximum width for the container */
+    margin: auto; /* Center the container */
+    text-align: center; /* Center text */
+    color: white; /* White text color */
+    padding: 0 1rem; /* Added horizontal padding for smaller screens */
+}
+
+.footer-text {
+    margin-bottom: 1rem; /* Space below text */
+    font-size: 1rem; /* Base font size */
+}
+
+.footer-socials {
+    display: flex; /* Flexbox for social icons */
+    justify-content: center; /* Center icons */
+    gap: 1rem; /* Space between icons */
+    margin-top: 1rem; /* Space above icons */
+}
+
+.social-link {
+    color: white; /* White color for links */
+    transition: color 0.3s; /* Transition for hover effect */
+    font-size: 1.5rem; /* Icon size */
+}
+
+.social-link:hover {
+    color: #c1c1c2; /* Light gray color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .footer {
+        padding: 1rem 0; /* Reduced vertical padding for mobile */
+    }
+
+    .footer-container {
+        padding: 0 0.5rem; /* Less horizontal padding for small screens */
+    }
+
+    .footer-text {
+        font-size: 0.875rem; /* Smaller font size for mobile */
+    }
+
+    .social-link {
+        font-size: 1.25rem; /* Smaller icon size for mobile */
+    }
+}
+
