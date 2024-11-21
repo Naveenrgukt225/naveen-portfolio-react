@@ -16,7 +16,7 @@ const About = ({ darkMode }) => {
         <p className="about-description">
           As a web developer, <br /> I am passionate about creating visually
           appealing and user-friendly websites. With expertise in HTML, CSS,
-          JavaScript, Bootstrap, and jQuery, I strive to deliver high-quality
+          JavaScript, ReactJS, and SQL, I strive to deliver high-quality
           and responsive designs that meet the needs of my clients. I look
           forward to collaborating with you and bringing your web development
           projects to life. Feel free to explore my portfolio and get in touch

@@ -65,7 +65,7 @@
     font-size: 1.5rem; /* Font size for the toggle button */
     outline: none;
     transition: all 0.5s ease-in-out; /* Smooth transition for all properties */
-    margin-left: 1.5rem;
+    margin-left: 2.5rem;
   }
   
   .sun-icon {
@@ -188,6 +188,7 @@
     padding: 5rem 2rem; /* Padding for the hero section */
     transition: background-color 0.3s, color 0.3s; /* Smooth transitions for background and text color */
     display: flex;
+    min-width: 400px;
 }
 
 .hero-section.dark {
@@ -300,12 +301,14 @@
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center content */
         text-align: center; /* Center text */
+        /* padding: 3rem 2rem; */
+        /* width: 100%;  */
     }
     .contents-hero{
         margin-left: 30px;
     }
 
-    .hero-image {
+    .hero-image {padding: 3rem 2rem; 
         display: none; /* Hide the image on smaller screens */
     }
 
@@ -346,6 +349,7 @@
     display: flex;
     flex-direction: row; /* Default to row layout */
     justify-content: space-between; /* Space between image and text */
+    min-width: 400px;
 }
 
 .about-image {
@@ -441,7 +445,7 @@
     padding: 5rem 13rem; /* Vertical and horizontal padding */
     display: flex; /* Flexbox layout */
     flex-direction: row; /* Default to row layout */
-    min-width: 300px;
+    min-width: 400px;
 }
 
 .skills-section.dark {
@@ -556,6 +560,7 @@
     background-color: white; /* Background color for light mode */
     padding: 3rem 0; /* py-12 */
     scroll-margin-top: 40px; /* Adjust based on your header height */
+    min-width: 400px;
 }
 
 .portfolio-section.dark {
@@ -699,6 +704,7 @@
 
 
 .email-container {
+    min-width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -861,6 +867,7 @@
 
 
 .contact-section {
+    min-width: 400px;
     background-color: white; /* Light mode background */
     padding: 5rem 2rem; /* Padding */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
@@ -961,6 +968,7 @@
 /* footer code from here */
 
 .footer {
+    min-width: 400px;
     background-color: #A855F7; /* Purple background */
     padding: 1.5rem 0; /* Vertical padding */
 }
