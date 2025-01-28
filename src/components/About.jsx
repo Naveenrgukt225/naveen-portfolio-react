@@ -23,7 +23,7 @@ const About = ({ darkMode }) => {
           with me to discuss your project requirements.
         </p>
         <button className="download-button">
-          <a href="https://drive.google.com/file/d/1mE5SGih0xSEAFJr87yO269ulPDrOcWv5/view?usp=drivesdk" target="__blank">
+          <a href="https://drive.google.com/file/d/17LradX3oRY54xeQOZjZ6eqyCxwR1ioCC/view?usp=drivesdk" target="__blank">
             Download CV
           </a>
         </button>
