@@ -3,7 +3,7 @@ import AboutImg from "../assets/asset 1.png";
 import './style.css'; // Ensure you import the CSS file
 
 const About = ({ darkMode }) => {
-  return (
+  return (  
     <section 
       id="about" 
       className={`about-section ${darkMode ? 'dark' : 'light'}`} 

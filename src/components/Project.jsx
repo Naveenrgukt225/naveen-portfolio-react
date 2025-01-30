@@ -11,7 +11,7 @@ import './style.css'; // Import the CSS file
 const portfolioData = [
   { id: 1, title: 'Project 1', category: 'Website', image: p1, link: 'http://localhost:8080/PetShop/petIndex.jsp' },
   { id: 2, title: 'Project 2', category: 'Application', image: p2, link: 'https://www.google.com' },
-  { id: 3, title: 'Project 3', category: 'Website', image: p3, link: 'http://localhost:3000/' },
+  { id: 3, title: 'Project 3', category: 'Website', image: p3, link: 'https://www.google.com' },
   { id: 4, title: 'Project 4', category: 'Application', image: p4, link: 'https://www.google.com' },
   { id: 5, title: 'Project 5', category: 'Website', image: p5, link: 'https://www.google.com' },
 ];

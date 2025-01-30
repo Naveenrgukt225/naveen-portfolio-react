@@ -13,7 +13,7 @@ const Footer = () => {
           <a href="https://youtube.com/@ipsnaveennayak6702/" target="_blank" className="social-link"><i className="fab fa-youtube"></i></a>
         </div>
       </div>
-    </footer>
+    </footer>   
   );
 };
 

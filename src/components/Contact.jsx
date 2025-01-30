@@ -7,7 +7,7 @@ function Contact({ darkMode }) { // Add darkMode prop
   const chartRef = useRef(null);
 
   useEffect(() => {
-    const runtime = new Runtime();
+    const runtime = new Runtime();   
     runtime.module(define, (name) => {
       if (name === 'chart') {
         return new Inspector(chartRef.current);

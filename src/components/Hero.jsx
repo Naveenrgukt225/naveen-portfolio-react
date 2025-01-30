@@ -5,7 +5,7 @@ import './style.css'; // Import the CSS file
 const Hero = ({ darkMode }) => {
   return (
     <section id="home" className={`hero-section ${darkMode ? 'dark' : ''}`}>
-      <div className="hero-container">
+      <div className="hero-container">  
         <div className="contents-hero">
           <div className="social-links">
             <a href="https://www.linkedin.com/in/bhukya-naveen-563b04329/" target="_blank" aria-label="LinkedIn">

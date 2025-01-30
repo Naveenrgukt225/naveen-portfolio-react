@@ -31,7 +31,7 @@ const Skills = ({ darkMode }) => {
       </div>
       <img src={SkillImg} alt="Developer Illustration" className="skills-image" />
     </section>
-  );
+  );    
 };
 
 export default Skills;

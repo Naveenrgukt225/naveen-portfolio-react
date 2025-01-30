@@ -6,7 +6,7 @@ import './style.css';
 const Header = ({ darkMode, setDarkMode }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const toggleNav = () => {
+  const toggleNav = () => {  
     setIsNavOpen(prev => !prev);
   };
 
